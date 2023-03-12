@@ -1,16 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>لینک ها</title>
-    <nav>
-        <a href="https://translate.google.com/" target="_self">go translate ||</a>
-        <a href="https://www.google.com/" target="_blank">go google</a>
-    </nav>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>فرم ها</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Login Page:</legend>
+        <br /><br />
+        <label for="user">username:</label>
+        <input
+          id="user"
+          type="text"
+          placeholder="type name"
+          required
+          autofocus
+        /><br /><br />
+        <label for="pass">password:</label>
+        <input id="pass" type="password" required /><br /><br />
+        <label for="remember">remember me</label>
+        <input type="checkbox" name="remember" id="remember" /><br /><br />
+        <label>Gender:</label><br />
+        <blockquote align="left" dir="rtl">
+          <label for="male">Male:</label>
+          <input type="radio" name="Gender" value="Male" id="male" checked />
+          <br />
+          <label for="female">Female:</label>
+          <input type="radio" name="Gender" value="Female" id="female" />
+          <br /><br />
+        </blockquote>
+        <input type="submit" />
+        <input type="reset" />
+        <input
+          type="button"
+          value="Help!"
+          onclick="alert('نام و رمز خود را وارد کنید')"
+        />
+      </fieldset>
+    </form>
+  </body>
 </html>
