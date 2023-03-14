@@ -4,140 +4,117 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>مینی پروژه طراحی یک فرم کامل</title>
+    <title>جدول ها</title>
   </head>
-  <body>
-    <div dir="rtl">
-      <fieldset>
-        <legend align="center">فرم استعلام قیمت طراحی سایت</legend>
-        <form align="right">
-            <p>فیلد های دارای * باید حتما توسط شما تکمیل شوند</p>
-          <table dir="rtl">
-            <tr>
-              <th><label for="name">* نام:</label></th>
-              <th>
-                <input
-                  type="text"
-                  id="name"
-                  placeholder="نام خود را وارد کنید..."
-                  required
-                />
-              </th>
-            </tr>
+  <body
+    dir="rtl"
+    style="
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+    "
+  >
+    <table border="1" align="center" style="width: 40%" cellpadding="9">
+      <caption>
+        دوره های موجود در سایت
+      </caption>
+      <tr bgcolor="cccccc">
+        <th>ردیف</th>
+        <th>نام دوره</th>
+        <th>ساعت دوره</th>
+        <th>وضعیت دوره</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>آموزش مقدماتی HTML</td>
+        <td>3</td>
+        <th bgcolor="#1B5E20" style="color: #fff" rowspan="3">تکمیل شده</th>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>آموزش مقدماتی CSS</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>آموزش مقدماتی JS</td>
+        <td>4</td>
+      </tr>
+    </table>
+    <br /><br />
 
-            <tr>
-              <th><label for="family">* نام خانوادگی:</label></th>
-              <th>
-                <input
-                  type="text"
-                  id="family"
-                  placeholder="نام خانوادگی خود را وارد کنید..."
-                  required
-                />
-              </th>
-            </tr>
-            <tr>
-              <th><label for="email">* ایمیل:</label></th>
-              <th>
-                <input
-                  type="text"
-                  id="email"
-                  placeholder="ایمیل خود را وارد کنید..."
-                  required
-                />
-              </th>
-            </tr>
+    <table border="1" align="center" style="width: 40%" cellpadding="9">
+      <caption>
+        دوره های موجود در سایت
+      </caption>
+      <tr bgcolor="cccccc">
+        <th>ردیف</th>
+        <th>نام دوره</th>
+        <th>ساعت دوره</th>
+        <th>وضعیت دوره</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>آموزش پیشرفته HTML</td>
+        <td>3</td>
+        <th bgcolor="#FBC02D" style="color: #000" rowspan="3">درحال برگذاری</th>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>آموزش پیشرفته CSS</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>آموزش پیشرفته JS</td>
+        <td>4</td>
+      </tr>
+    </table>
+    <br /><br />
 
-            <tr>
-              <th><label for="phone">* شماره همراه:</label></th>
-              <th>
-                <input
-                  type="text"
-                  id="phone"
-                  placeholder="شماره همراه خود را وارد کنید..."
-                  required
-                />
-              </th>
-            </tr>
-
-            <tr>
-              <th><label for="home"> شماره منزل :</label></th>
-              <th>
-                <input
-                  type="text"
-                  id="home"
-                  placeholder="شماره منزل خود را وارد کنید..."
-                />
-              </th>
-            </tr>
-
-            <tr>
-              <th><label for="color-theme"> تم سایت:</label></th>
-              <th>
-                <input
-                  type="color"
-                  name="color-theme"
-                  id="color-theme"
-                  value="#ff0000"
-                />
-              </th>
-            </tr>
-          </table>
-          <br />
-          <label> بودجه شما برای طراحی پروژه</label>
-          <br />
-          <span>1 میلیون تا 5 میلیون تومان</span>
-          <input type="radio" name="boodje" />
-
-          <span>5 میلیون تا 10 میلیون تومان</span>
-          <input type="radio" name="boodje" />
-
-          <span>10 میلیون به بالا</span>
-          <input type="radio" name="boodje" checked />
-          <br /><br />
-          <label>*نوع وبسایت شما:</label>
-          <select required>
-            <option>خدماتی</option>
-            <option>فروشگاهی</option>
-            <option>شرکتی</option>
-            <option>شخصی</option>
-            <option>سایر ...</option></select
-          ><br /><br />
-          <label>خدمات اضافه:</label>
-          <span>سئو</span>
-          <input type="checkbox" name="seo" />
-
-          <span>واکنشگرایی</span>
-          <input type="checkbox" name="BS" />
-
-          <span>تبلیغات گوگل</span>
-          <input type="checkbox" name="ADS" />
-          <br /><br />
-          <label>زمان مطلوب شما برای تحویل پروژه:</label>
-          <span>40 روز</span>
-          <input type="range" />
-          <span>20 روز</span><br /><br />
-          <textarea placeholder="توضیحات ..."></textarea><br /><br />
-          <input type="submit" value="ثبت درخواست" />
-          <input type="reset" value="پاک کردن فرم" />
-        </form>
-      </fieldset>
-    </div>
-    <style>
-      textarea {
-        width: 200px;
-        height: 200px;
-      }
-      th {
-        padding-top: 15px;
-      }
-      table {
-        margin-top: 20px;
-      }
-      p{
-        color: red;
-      }
-      
-    </style>
+    <table border="1" align="center" style="width: 40%" cellpadding="9">
+      <caption>
+        دوره های موجود در سایت
+      </caption>
+      <tr bgcolor="cccccc">
+        <th>ردیف</th>
+        <th>نام دوره</th>
+        <th>ساعت دوره</th>
+        <th>وضعیت دوره</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>آموزش مقدماتی HTML</td>
+        <td>3</td>
+        <th bgcolor="#1B5E20" style="color: #fff" rowspan="3">تکمیل شده</th>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>آموزش مقدماتی CSS</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>آموزش مقدماتی JS</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>آموزش پیشرفته HTML</td>
+        <td>3</td>
+        <th bgcolor="#FBC02D" style="color: #000" rowspan="4">
+          در حال برگذاری
+        </th>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>آموزش پیشرفته CSS</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>آموزش پیشرفته JS</td>
+        <td>4</td>
+      </tr>
+    </table>
   </body>
 </html>
