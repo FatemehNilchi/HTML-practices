@@ -4,70 +4,140 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> فرم ها و کار با سلکت آپشن ها</title>
+    <title>مینی پروژه طراحی یک فرم کامل</title>
   </head>
   <body>
-    <form dir="rtl">
-      <label>ماه تولد شما</label>
-      <select>
-        <optgroup label="بهار">
-          <option>فروردین</option>
-          <option>اردیبهشت</option>
-          <option>خرداد</option>
-        </optgroup>
-        <optgroup label="تابستان">
-            <option>تیر</option>
-            <option>مرداد</option>
-            <option>شهریور</option>
-          </optgroup>
-          <optgroup label="پاییز">
-            <option>مهر</option>
-            <option>آبان</option>
-            <option>آذر</option>
-          </optgroup>
-        <optgroup label="زمستان">
-            <option>دی</option>
-            <option>بهمن</option>
-            <option>اسفند</option>
-          </optgroup>
-      </select>
-      <br /><br /><br />
-      <label>روز تولد شما</label>
+    <div dir="rtl">
+      <fieldset>
+        <legend align="center">فرم استعلام قیمت طراحی سایت</legend>
+        <form align="right">
+            <p>فیلد های دارای * باید حتما توسط شما تکمیل شوند</p>
+          <table dir="rtl">
+            <tr>
+              <th><label for="name">* نام:</label></th>
+              <th>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="نام خود را وارد کنید..."
+                  required
+                />
+              </th>
+            </tr>
 
-      <select>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-        <option value="9">9</option>
-        <option value="10">10</option>
-        <option value="11">11</option>
-        <option value="12">12</option>
-        <option value="13">13</option>
-        <option value="14">14</option>
-        <option value="15">15</option>
-        <option value="16">16</option>
-        <option value="17">17</option>
-        <option value="18">18</option>
-        <option value="19">19</option>
-        <option value="20">20</option>
-        <option value="21">21</option>
-        <option value="22">22</option>
-        <option value="23">23</option>
-        <option value="24">24</option>
-        <option value="25">25</option>
-        <option value="26">26</option>
-        <option value="27">27</option>
-        <option value="28">28</option>
-        <option value="29">29</option>
-        <option value="30">30</option>
-      </select><br><br><br>
-      <label>نظر خود را ثبت کنید</label><br>
-      <textarea  cols="30" rows="10"></textarea>
-    </form>
+            <tr>
+              <th><label for="family">* نام خانوادگی:</label></th>
+              <th>
+                <input
+                  type="text"
+                  id="family"
+                  placeholder="نام خانوادگی خود را وارد کنید..."
+                  required
+                />
+              </th>
+            </tr>
+            <tr>
+              <th><label for="email">* ایمیل:</label></th>
+              <th>
+                <input
+                  type="text"
+                  id="email"
+                  placeholder="ایمیل خود را وارد کنید..."
+                  required
+                />
+              </th>
+            </tr>
+
+            <tr>
+              <th><label for="phone">* شماره همراه:</label></th>
+              <th>
+                <input
+                  type="text"
+                  id="phone"
+                  placeholder="شماره همراه خود را وارد کنید..."
+                  required
+                />
+              </th>
+            </tr>
+
+            <tr>
+              <th><label for="home"> شماره منزل :</label></th>
+              <th>
+                <input
+                  type="text"
+                  id="home"
+                  placeholder="شماره منزل خود را وارد کنید..."
+                />
+              </th>
+            </tr>
+
+            <tr>
+              <th><label for="color-theme"> تم سایت:</label></th>
+              <th>
+                <input
+                  type="color"
+                  name="color-theme"
+                  id="color-theme"
+                  value="#ff0000"
+                />
+              </th>
+            </tr>
+          </table>
+          <br />
+          <label> بودجه شما برای طراحی پروژه</label>
+          <br />
+          <span>1 میلیون تا 5 میلیون تومان</span>
+          <input type="radio" name="boodje" />
+
+          <span>5 میلیون تا 10 میلیون تومان</span>
+          <input type="radio" name="boodje" />
+
+          <span>10 میلیون به بالا</span>
+          <input type="radio" name="boodje" checked />
+          <br /><br />
+          <label>*نوع وبسایت شما:</label>
+          <select required>
+            <option>خدماتی</option>
+            <option>فروشگاهی</option>
+            <option>شرکتی</option>
+            <option>شخصی</option>
+            <option>سایر ...</option></select
+          ><br /><br />
+          <label>خدمات اضافه:</label>
+          <span>سئو</span>
+          <input type="checkbox" name="seo" />
+
+          <span>واکنشگرایی</span>
+          <input type="checkbox" name="BS" />
+
+          <span>تبلیغات گوگل</span>
+          <input type="checkbox" name="ADS" />
+          <br /><br />
+          <label>زمان مطلوب شما برای تحویل پروژه:</label>
+          <span>40 روز</span>
+          <input type="range" />
+          <span>20 روز</span><br /><br />
+          <textarea placeholder="توضیحات ..."></textarea><br /><br />
+          <input type="submit" value="ثبت درخواست" />
+          <input type="reset" value="پاک کردن فرم" />
+        </form>
+      </fieldset>
+    </div>
+    <style>
+      textarea {
+        width: 200px;
+        height: 200px;
+      }
+      th {
+        padding-top: 15px;
+      }
+      table {
+        margin-top: 20px;
+      }
+      p{
+        color: red;
+      }
+      
+    </style>
   </body>
 </html>
