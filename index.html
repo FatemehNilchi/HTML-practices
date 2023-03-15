@@ -1,120 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>جدول ها</title>
-  </head>
-  <body
-    dir="rtl"
-    style="
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
-        sans-serif;
-    "
-  >
-    <table border="1" align="center" style="width: 40%" cellpadding="9">
-      <caption>
-        دوره های موجود در سایت
-      </caption>
-      <tr bgcolor="cccccc">
-        <th>ردیف</th>
-        <th>نام دوره</th>
-        <th>ساعت دوره</th>
-        <th>وضعیت دوره</th>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>آموزش مقدماتی HTML</td>
-        <td>3</td>
-        <th bgcolor="#1B5E20" style="color: #fff" rowspan="3">تکمیل شده</th>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>آموزش مقدماتی CSS</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>آموزش مقدماتی JS</td>
-        <td>4</td>
-      </tr>
-    </table>
-    <br /><br />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img map & area</title>
+</head>
+<body align="center">
+    <h1>با کلیک بر روی استان تهران یا اصفهان به صفحه ویکی پدیا آن استان منتقل میشوید</h1>
+    <img src="IRmap.gif" alt="iran map" usemap="#image-map" style="padding: 20px;">
 
-    <table border="1" align="center" style="width: 40%" cellpadding="9">
-      <caption>
-        دوره های موجود در سایت
-      </caption>
-      <tr bgcolor="cccccc">
-        <th>ردیف</th>
-        <th>نام دوره</th>
-        <th>ساعت دوره</th>
-        <th>وضعیت دوره</th>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>آموزش پیشرفته HTML</td>
-        <td>3</td>
-        <th bgcolor="#FBC02D" style="color: #000" rowspan="3">درحال برگذاری</th>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>آموزش پیشرفته CSS</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>آموزش پیشرفته JS</td>
-        <td>4</td>
-      </tr>
-    </table>
-    <br /><br />
-
-    <table border="1" align="center" style="width: 40%" cellpadding="9">
-      <caption>
-        دوره های موجود در سایت
-      </caption>
-      <tr bgcolor="cccccc">
-        <th>ردیف</th>
-        <th>نام دوره</th>
-        <th>ساعت دوره</th>
-        <th>وضعیت دوره</th>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>آموزش مقدماتی HTML</td>
-        <td>3</td>
-        <th bgcolor="#1B5E20" style="color: #fff" rowspan="3">تکمیل شده</th>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>آموزش مقدماتی CSS</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>آموزش مقدماتی JS</td>
-        <td>4</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>آموزش پیشرفته HTML</td>
-        <td>3</td>
-        <th bgcolor="#FBC02D" style="color: #000" rowspan="4">
-          در حال برگذاری
-        </th>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>آموزش پیشرفته CSS</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>آموزش پیشرفته JS</td>
-        <td>4</td>
-      </tr>
-    </table>
-  </body>
+    <map name="image-map">
+        <area target="_blank" alt="Tehran-wikipedia" title="Tehran-wikipedia" href="https://fa.wikipedia.org/wiki/%D8%AA%D9%87%D8%B1%D8%A7%D9%86" coords="173,132,172,145,181,145,191,148,198,149,204,144,200,134,208,133,216,138,227,137,231,129,226,124,213,122,202,123,193,118,186,118,172,111,160,123,160,130,166,132" shape="poly">
+        <area target="_blank" alt="Esfahan-wikipedia" title="Esfahan-wikipedia" href="https://fa.wikipedia.org/wiki/%D8%A7%D8%B5%D9%81%D9%87%D8%A7%D9%86" coords="177,174,178,165,192,164,197,165,208,165,216,166,241,168,278,168,284,168,286,177,286,187,277,195,277,204,267,206,256,211,248,211,240,215,233,215,224,217,224,230,220,241,207,244,203,241,192,242,197,248,194,257,193,266,184,259,181,244,180,226,173,219,164,215,154,214,144,210,142,202,150,194,158,186" shape="poly">
+    </map>
+</body>
 </html>
